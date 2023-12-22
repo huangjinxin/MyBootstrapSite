@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>老徐折腾🤣</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 56px; /* 为顶部导航栏留出空间 */
+        }
+        .carousel-item img {
+            object-fit: cover; /* 确保图片铺满整个轮播图容器 */
+            height: 35vh; /* 设置图片的高度 */
+            min-height: 200px; /* 最小高度 */
+        }
+        .navbar-brand img {
+            height: 30px; /* Logo的大小 */
+        }
+        .card-deck .card {
+            margin-bottom: 1rem;
+        }
+        /* CSS 文件或者 <style> 标签中 */
+.card-img-custom {
+    height: 320px; /* 设置图片高度 */
+    object-fit: cover; /* 裁切图片以填满容器 */
+    width: 100%; /* 可选：如果您想让图片宽度也一致 */
+}
+
+.card-custom {
+    transition: transform 0.3s ease-in-out; /* 添加过渡动画，使阴影效果更平滑 */
+}
+
+.card-custom:hover {
+    transform: scale(1.03); /* 鼠标悬停时，卡片轻微放大 */
+}
+        
+    </style>
+</head>
+<body>
+
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="Logo"> 老徐的html折腾
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">狗窝</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">那些年</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">技术分享</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">老徐历程</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">那些人</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">关于我</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 轮播图 -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/a1.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>这是两个大傻逼</h5>
+                    <p>我不知道该如何描述他们俩个家伙。</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/a2.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>第二张图片</h5>
+                    <p>这是第二张图片的描述。</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/a4.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>第三张图片</h5>
+                    <p>这是第三张图片的描述。</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">上一张</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">下一张</span>
+        </button>
+    </div>
+
+    <!-- 卡片1-6 -->
+    <div class="container mt-4"> <!-- 容器，mt-4 表示上边距为 1.5rem 或 24px -->
+        <div class="row row-cols-1 row-cols-md-3 g-4"> <!-- 行，每行1列，在中等设备上每行3列，g-4表示列间隔为 1.5rem 或 24px -->
+            <div class="col mb-4"> <!-- 列，mb-4 表示下边距为 1.5rem 或 24px -->
+                <div class="card h-100 card-custom shadow"> <!-- 添加 card-custom 和 shadow 类 -->
+                    <img src="img/card1.png" class="card-img-top card-img-custom" alt="..."> <!-- 添加 card-img-custom 类 --><!-- 卡片内容 --><!-- 图片，card-img-top 应用样式到图片顶部，高度设置为200px，object-fit 设置为cover -->
+                    <div class="card-body"> <!-- 卡片内容区域 -->
+                        <h5 class="card-title">老徐学微积分</h5> <!-- 卡片标题 -->
+                        <p class="card-text">哪一天老徐学习中，学习微积分掉了不少头发。</p> <!-- 卡片文本 -->
+                    </div>
+                </div>
+            </div>
+            <!-- 复制以下列来添加更多卡片 -->
+            <div class="col mb-4">
+                <div class="card h-100 card-custom shadow"> <!-- 添加 card-custom 和 shadow 类 -->
+                    <img src="img/card2.png" class="card-img-top card-img-custom" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">css</h5>
+                        <p class="card-text">关于css的一些描述。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card h-100 card-custom shadow"> <!-- 添加 card-custom 和 shadow 类 -->
+                    <img src="img/card3.png" class="card-img-top card-img-custom" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">javascript</h5>
+                        <p class="card-text">关于javascript的一些描述。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card h-100 card-custom shadow"> <!-- 添加 card-custom 和 shadow 类 -->
+                    <img src="img/card4.png" class="card-img-top card-img-custom" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">python</h5>
+                        <p class="card-text">关于python 的一些描述。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card h-100 card-custom shadow"> <!-- 添加 card-custom 和 shadow 类 -->
+                    <img src="img/card5.png" class="card-img-top card-img-custom" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">php</h5>
+                        <p class="card-text">关于php的一些描述。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card h-100 card-custom shadow"> <!-- 添加 card-custom 和 shadow 类 -->
+                    <img src="img/card6.png" class="card-img-top card-img-custom" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">bootstrap</h5>
+                        <p class="card-text">关于bootstrap的一些描述。</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>  
+
+    <!-- 底部版权信息 -->
+    <footer class="bg-light text-center text-lg-start">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2023 我的网站名字:
+            <a class="text-dark" href="https://mywebsite.com/">mywebsite.com</a>
+        </div>
+    </footer>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
