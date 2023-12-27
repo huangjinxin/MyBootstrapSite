@@ -1,0 +1,28 @@
+body {
+    padding-top: 56px; /* 为顶部导航栏留出空间 */
+}
+.carousel-item img {
+    object-fit: cover; /* 确保图片铺满整个轮播图容器 */
+    height: 35vh; /* 设置图片的高度 */
+    min-height: 200px; /* 最小高度 */
+}
+.navbar-brand img {
+    height: 30px; /* Logo的大小 */
+}
+.card-deck .card {
+    margin-bottom: 1rem;
+}
+/* CSS 文件或者 <style> 标签中 */
+.card-img-custom {
+height: 320px; /* 设置图片高度 */
+object-fit: cover; /* 裁切图片以填满容器 */
+width: 100%; /* 可选：如果您想让图片宽度也一致 */
+}
+
+.card-custom {
+transition: transform 0.3s ease-in-out; /* 添加过渡动画，使阴影效果更平滑 */
+}
+
+.card-custom:hover {
+transform: scale(1.03); /* 鼠标悬停时，卡片轻微放大 */
+}
