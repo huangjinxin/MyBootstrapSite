@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-<?php include 'navbar.html'; ?>
+    <?php include 'navbar.html'; ?>
     <?php include 'carousel.html'; ?>
     <?php include 'card.html'; ?>
     <?php include 'info.html'; ?>
